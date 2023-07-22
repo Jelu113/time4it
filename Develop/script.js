@@ -14,7 +14,7 @@ $(document).ready(function () {
   
       if (now > i) id.addClass("past")
     }
-  
+  //get inputs from local storage and puts it on the page when it first loads. 
     for (var i = 9; i <= 17; i++) {
       var item = localStorage.getItem(i);
       if (item) {
@@ -23,6 +23,7 @@ $(document).ready(function () {
     }
   });
   
+  // put input into local storage. 
   $(function () {
     $('.saveBtn').on('click', function() {
       var time = $(this).parent().attr('id')
